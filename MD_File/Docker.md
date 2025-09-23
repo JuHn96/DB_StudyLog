@@ -50,30 +50,6 @@ docker rm my-mysql
 
 ---
 
-## 🚀 예시 시나리오
-
-**MySQL을 설치하려고 할 때:** 보통은 직접 설치하면 OS 맞춰서 설치파일 내려받고, 환경변수 잡고, 충돌 문제 해결해야 함.
-```sql
-# Docker에서는
-docker run -d --name mysql8-container \
-  -e MYSQL_ROOT_PASSWORD=1234 \
-  -e MYSQL_DATABASE=testdb \
-  -p 3307:3306 \
-  mysql:8.0
-```
->**몇 초 만에 DB 서버 실행 완료.**
-
-**📝 요약**
-
-1. **Docker** = “어디서나 똑같이 실행되는 표준화된 실행 환경”
-
-2. 이미지 → 컨테이너 구조
-
-3. 개발/운영 환경 차이 줄이고, 배포 및 관리 효율 극대화
-
-
----
-
 ### 🐳Docker 개념 정리(요약)
 
 **Docker:** 어디서든 동일하게 실행되는 실행 환경 제공 플랫폼
@@ -144,11 +120,15 @@ docker exec -it mysql8-container mysql -u root -p
 
 ---
 
-## 📌 요약
-1. Docker 설치 (Docker Desktop or apt install)
-2. `docker pull hello-world` → 정상 동작 확인
-3. `docker run mysql:8.0 ...` → 실제 DB 띄워보기
-4. 정리
+**📝 요약**
+
+1. **Docker** = “어디서나 똑같이 실행되는 표준화된 실행 환경”
+2. 이미지 → 컨테이너 구조
+3. 개발/운영 환경 차이 줄이고, 배포 및 관리 효율 극대화
+4. Docker 설치 (Docker Desktop or apt install)
+5. `docker pull hello-world` → 정상 동작 확인
+6. `docker run mysql:8.0 ...` → 실제 DB 띄워보기
+7. 정리
 ```sql
 MySQL → docker run ... mysql:8.0
 MongoDB → docker run ... mongo:latest
