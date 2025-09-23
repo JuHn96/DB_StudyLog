@@ -20,6 +20,10 @@
 - Windows 10 Pro 이상 → Hyper-V / Home → WSL2 필요  
 - 설치 후 재부팅 → 작업표시줄에 🐳 아이콘 확인  
 
+---
+
+## 설치 확인 및 실행
+
 **설치 확인**
 ```sql
 docker --version
