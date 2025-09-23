@@ -3,7 +3,7 @@
 
 # DBeaver
 
-[Download Here!](Download.md)
+[DownLoad Here!](Download.md)
 
 ---
 
@@ -84,6 +84,56 @@ Password: 1234
 ```java
 //javascript
 db.users.find()
+```
+
+---
+
+## 📘 DBeaver 자주 쓰는 기능 & 단축키 정리
+
+### SQL 편집기 관련
+| 기능 | 단축키 | 설명 |
+|------|--------|------|
+| 자동완성 | Ctrl + Space | 테이블명, 컬럼명 자동 완성 |
+| 코드 포맷팅 | Ctrl + Shift + F | SQL 문 정렬/예쁘게 배치 |
+| 현재 쿼리 실행 | Ctrl + Enter | 커서 위치 SQL만 실행 |
+| 전체 실행 | Alt + X <br>(또는 Ctrl + Shift + Enter) | SQL 스크립트 전체 실행 |
+| 히스토리 보기 | Alt + ↑ / Alt + ↓ | 이전/다음 쿼리 불러오기 |
+| 주석 처리 | Ctrl + / | 선택한 줄 주석/해제 |
+
+### 결과창 / 데이터 조회
+| 기능 | 단축키 | 설명 |
+|------|--------|------|
+| 데이터 새로고침 | F5 | 조회 결과 다시 불러오기 |
+| 선택 영역 복사 | Ctrl + C | 결과창 데이터 복사 (CSV 형식도 가능) |
+| 셀 편집 | 더블클릭 | 조회된 데이터 직접 수정 |
+| 결과 내 검색 | Ctrl + F | 결과창 데이터에서 텍스트 검색 |
+
+### 탐색기 / DB 관리
+| 기능 | 단축키 | 설명 |
+|------|--------|------|
+| 새 연결 생성 | Ctrl + Shift + N | DB 연결 추가 |
+| 연결 새로고침 | F5 | 스키마/테이블 최신화 |
+| 객체 검색 | Ctrl + Shift + F | 테이블/컬럼/프로시저 이름 검색 |
+
+### ERD / 시각화
+- **자동 ERD 생성**: 스키마 → 우클릭 → ER Diagram  
+- **쿼리 결과 차트 보기**: 결과창 탭에서 Grid → Charts 전환  
+
+### 데이터 Import / Export
+- **Export**: 테이블 → 우클릭 → Export Data  
+  - CSV, Excel, JSON, SQL 등 지원  
+- **Import**: 테이블 → 우클릭 → Import Data  
+  - CSV, Excel → 테이블로 삽입 가능  
+
+## Tip!
+```java
+1) 쿼리 히스토리 
+   - 메뉴 → Window → Database Query Manager  
+   - 실행했던 쿼리 전체 확인 가능  
+2) Favorite Queries (스니펫)  
+   - 자주 쓰는 쿼리를 저장해두고 재사용 가능  
+3) 멀티 DB 비교 
+   - 같은 테이블을 다른 DB에서 열고 데이터 비교 가능  
 ```
 
 ---
