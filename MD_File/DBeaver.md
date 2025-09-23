@@ -1,9 +1,7 @@
-<a href="../ReadMe.md" style="float:right;">Home</a>
+<a href="../ReadMe.md" style="float:right;">🏠Home</a><a id="top"></a>
 
 
-# DBeaver
-
-[DownLoad Here!](Download.md)
+# 🦫DBeaver - [📥](Download.md)
 
 ---
 
@@ -18,9 +16,9 @@
 ---
 
 
-## MySQL / MongoDB 연결
+## 🐬MySQL / 🍃MongoDB 연결
 
-### MySQL 연결 방법
+### 🐬MySQL 연결 방법
 
 >전제: MySQL 서버가 설치되어 있거나, Docker로 실행 중이어야 함
 ```java
@@ -45,14 +43,14 @@
 5. 확인
 - 왼쪽 네비게이터에서 Schemas → Tables 클릭 → 테이블 구조 확인 가능
 - 우클릭 → SQL Editor → New SQL Script 선택 후 쿼리 실행 가능
-```
-**예:**
-```java
+- 예:
 //sql
 SELECT * FROM employees;
 ```
 
-### MongoDB 연결 방법
+---
+
+### 🍃MongoDB 연결 방법
 >전제: MongoDB 서버가 설치되어 있거나, Docker로 실행 중이어야 함
 ```java
 1. 새 연결 만들기
@@ -62,14 +60,11 @@ SELECT * FROM employees;
 - Host: localhost
 - Port: 27017 (MongoDB 기본 포트, Docker에서 다르게 설정했다면 그 값)
 - User/Password: MongoDB 실행 시 지정한 계정 (MONGO_INITDB_ROOT_USERNAME, MONGO_INITDB_ROOT_PASSWORD)
-```
-**예:**
-```java
+- 예:
 //yaml
 User: admin
 Password: 1234
-```
-```java
+
 3. 드라이버 다운로드
 - MongoDB JDBC 드라이버 다운로드 필요 → Download 클릭
 
@@ -79,9 +74,7 @@ Password: 1234
 5. 확인
 - 좌측 네비게이터에서 Databases → Collections 확인
 - SQL Editor 대신 Mongo Shell 스타일 쿼리 사용 가능 (find 등)
-```
-**예 (MongoDB):**
-```java
+- 예 (MongoDB):
 //javascript
 db.users.find()
 ```
@@ -125,8 +118,8 @@ db.users.find()
 - **Import**: 테이블 → 우클릭 → Import Data  
   - CSV, Excel → 테이블로 삽입 가능  
 
-## Tip!
-```java
+## Tip!💡
+```sql
 1) 쿼리 히스토리 
    - 메뉴 → Window → Database Query Manager  
    - 실행했던 쿼리 전체 확인 가능  
@@ -138,8 +131,8 @@ db.users.find()
 
 ---
 
-## DBeaver 주요 기능
-```java
+## 📝DBeaver 주요 기능
+```sql
 1) DB 연결/관리
 - JDBC 드라이버를 통해 다양한 DB에 접속 가능
 - 여러 개의 DB를 동시에 연결하고 탭으로 전환 가능  
@@ -168,7 +161,7 @@ db.users.find()
 
 ---
 
-## DBeaver의 장점
+## 📝DBeaver의 장점
 ```java
 1) 올인원(All-in-one): 하나의 툴로 여러 DB 관리 가능 → 개발자/DBA가 다중 DB 환경에서 편리하게 사용
 
@@ -181,8 +174,8 @@ db.users.find()
 
 ---
 
-## DBeaver와 비슷한 툴
-```java
+## 📝DBeaver와 비슷한 툴
+```sql
 1) HeidiSQL (MySQL/MariaDB 특화, 가볍지만 DB 종류 제한적)
 
 2) phpMyAdmin (웹 기반, MySQL 전용)
@@ -191,3 +184,8 @@ db.users.find()
    >> DBeaver는 무료+멀티DB 지원이라는 점에서 가장 범용성이 높음.
 ```
 
+---
+
+<a href="#top" style="display:block; text-align:right; text-decoration:none; font-size:14px;">
+⬆️ 맨 위로
+</a>
