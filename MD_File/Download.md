@@ -4,7 +4,7 @@
 
 ---
 
-## 🦫DBeaver
+## 🐿️DBeaver
 **Link : https://dbeaver.io/download/**  
 >링크에 들어가서 아래 사진처럼 `installer`로 되어있는것 클릭해서 설치
 
