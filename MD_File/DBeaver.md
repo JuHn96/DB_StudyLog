@@ -50,7 +50,7 @@ SELECT * FROM employees;
 
 ---
 
-### 🍃MongoDB 연결 방법
+### 🍃MongoDB 연결 방법(MongoDB는 VSCode 사용이 더 간편)
 >전제: MongoDB 서버가 설치되어 있거나, Docker로 실행 중이어야 함
 ```java
 1. 새 연결 만들기
@@ -81,7 +81,7 @@ db.users.find()
 
 ---
 
-## 📘 DBeaver 자주 쓰는 기능 & 단축키 정리
+## 📜 DBeaver 자주 쓰는 기능 & 단축키 정리
 
 ### SQL 편집기 관련
 | 기능 | 단축키 | 설명 |
@@ -131,7 +131,7 @@ db.users.find()
 
 ---
 
-## 📝DBeaver 주요 기능
+## ⚙️ DBeaver 주요 기능
 ```sql
 1) DB 연결/관리
 - JDBC 드라이버를 통해 다양한 DB에 접속 가능
@@ -160,8 +160,8 @@ db.users.find()
 ```
 
 ---
-
-## 📝DBeaver의 장점
+ 
+## 📝 DBeaver의 장점
 ```java
 1) 올인원(All-in-one): 하나의 툴로 여러 DB 관리 가능 → 개발자/DBA가 다중 DB 환경에서 편리하게 사용
 
@@ -174,7 +174,7 @@ db.users.find()
 
 ---
 
-## 📝DBeaver와 비슷한 툴
+## 📝 DBeaver와 비슷한 툴
 ```sql
 1) HeidiSQL (MySQL/MariaDB 특화, 가볍지만 DB 종류 제한적)
 
