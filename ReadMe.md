@@ -41,7 +41,7 @@
 
 >25.09.25 - dockerRunCode 추가, 각 아이콘 보완 및 수정
 
->25.09.26 - MariaDB 항목 추가
+>25.09.26 - MariaDB.md / download.md에 mariadb 설치방법 추가
 
 
 
