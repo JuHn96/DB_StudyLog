@@ -4,6 +4,14 @@
 
 ---
 
+## 📝현재 도커 리스트
+
+![alt text](../images/dockerls.png)
+
+>2025-09-26
+
+---
+
 ### 🐘PostgreSQL
 ```
 docker run -d `
@@ -41,7 +49,20 @@ docker run -d `
 
 ---
 
+### 🦦MariaDB
+```
+docker volume create mariadb_edu
 
+docker run -d `
+  --name mariadb-edu `
+  -p 3309:3306 `
+  -e MARIADB_ROOT_PASSWORD=yourRootPass `
+  -e MARIADB_DATABASE=devdb `
+  -e MARIADB_USER=dev `
+  -e MARIADB_PASSWORD=devpass `
+  -v mariadb_edu:/var/lib/mysql `
+  mariadb:11.4
+```
 
 
 
