@@ -22,6 +22,7 @@
 
 
 ---
+## List
 
 ### 🐿️DBeaver - [Go](/MD_File/DBeaver.md)
 ### 🐬MySQL - 
@@ -29,8 +30,6 @@
 ### 🐳Docker - [Go](/MD_File/Docker.md)
 ### 🐘PostgreSQL - 
 ### 🦦MariaDB - 
-
-### 🏠Home
 
 ---
 
@@ -51,7 +50,7 @@
 ## MD작성시 참고 자료
 
 ### 각 아이콘
-🏠Home / 🐘PostgreSQL / 🐳Docker / 🍃MongoDB / 🐬MySQL / 🐿️DBeaver
+🏠Home / 🐘PostgreSQL / 🐳Docker / 🍃MongoDB / 🐬MySQL / 🐿️DBeaver /🦦MariaDB
 
 ### 각 md파일 상단(홈으로 버튼등록 / 맨 위로 버튼 입력을 위한 top지정)
 ```java

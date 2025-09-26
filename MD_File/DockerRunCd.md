@@ -63,7 +63,7 @@ docker run -d `
   -v mariadb_edu:/var/lib/mysql `
   mariadb:11.4
 ```
-
+> `local`에서 `3308`포트를 쓰고있기 때문에 분리를 위해 `3309`포트로 매핑
 
 
 

@@ -55,9 +55,11 @@ docker exec -it mysql8-container mysql -u root -p
 ## 설치 링크
 **Link : https://mariadb.org/download/**
 
+### 다운로드 설정 예시(현재 사용중인 패키지 설정)
 ![alt text](../images/mariaDBInstall_1.png)
 
 > 수업에 사용된 버전 `11.4.8`
+
 
 **옵션 설정**
 ```
@@ -66,30 +68,81 @@ docker exec -it mysql8-container mysql -u root -p
 - 포트 번호: 기본값 3306 그대로 사용(이미 사용중이라면 +1씩 늘려가기 / 현재 local port - 3308)
 - 서비스 등록: Windows 시작 시 자동 실행 옵션 체크
 ```
-**설치 완료 후 확인**
-1. 윈도우 검색창 → CMD 열기
-2. 접속 확인:
+
+
+## 설치창 설명 및 추천 체크 항목
+
+![alt text](../images/mariaDBInstall_2.png)
+
+**추천 설정**
+- root 비밀번호: 원하는 비밀번호 입력 후 확인
+- Enable access...: 체크 ❌
+- Use UTF8...: 체크 ⭕
+- Data directory: 기본값 유지
+
+**각 항목 설명**
+
+1. Modify password for database user 'root'
+-체크된 상태 유지하세요 (필수).
+-`New root password`와 `Confirm`에 같은 비밀번호 입력 → 앞으로 DB 접속할 때 쓰이는 관리자 비밀번호입니다.
+-⚠ 꼭 기억해두세요. 잊으면 접속 못합니다.
+
+2. Enable access from remote machines for 'root' user
+-기본적으로 체크 해제 상태 유지 권장.
+-로컬에서만 공부/개발할 거라면 그대로 두시면 됩니다.
+-만약 외부 PC에서 접속해야 한다면 나중에 MySQL 권한 설정으로 열어줄 수 있어요.
+
+3. Use UTF8 as default server's character set
+-가능하면 체크하세요 ✅.
+-한국어 데이터 다룰 때도 문제 없고, 기본 문자셋이 UTF-8로 지정됩니다.
+
+4. Data directory
+-데이터 저장 위치. 기본값(C:\Program Files\MariaDB 11.4\data\) 그대로 두면 됩니다.
+-특별히 다른 드라이브에 설치하고 싶지 않으면 건드릴 필요 없습니다.
+
+
+![alt text](../images/mariaDBInstall_3.png)
+**추천 설정**
+- `Install as service`: 체크 ⭕ (MariaDB 자동 실행)
+- `Enable networking`: 체크 ⭕, 포트 `3306` 유지 (현재 `3308`)
+- `Innodb engine`: 기본값 유지
+
+**각 항목 설명**
+
+1. Install as service
+-✅ (기본값 유지)
+-이렇게 해야 Windows 시작 시 자동으로 MariaDB 서버가 실행됩니다.
+-`Service Name: MariaDB` 그대로 두면 됩니다.
+2. Enable networking
+-✅ (기본값 유지)
+-TCP 포트: `3306` → 기본값 그대로 추천(현재 수업받는 내용 진행중 `3306`포트 사용중이라 `3308`로 변경)
+-나중에 DBeaver, VSCode, Node.js 같은 클라이언트에서 이 포트로 접속합니다.
+3. Innodb engine settings
+-Buffer pool size: 설치 프로그램이 PC 메모리 용량에 따라 자동으로 추천값을 줍니다. 그대로 두시면 됩니다.
+-Page size: `16KB` 기본값 그대로 두세요.
+
+
+## 설치 완료 후 확인
+
+### 서비스 실행 확인
+**MariaDB는 Windows 서비스로 실행됩니다.**
+1. **`Win + R`** → `services.msc` 입력 (시스템창)
+2. 목록에서 `MariaDB` 찾아서 실행 상태 확인
+- `실행 중(Running)`이면 정상
+- 아니면 **우클릭 → 시작(Start)**
+
+### 명령어로 접속 확인
+1. `CMD` 또는 `PowerShell` 열기
+2. 접속 시도:
 ```sql
-mysql -u root -p
+mysql -u root -p -P 3308
 ```
-3. 아까 설정한 root 비밀번호 입력(현재 기준 : 123456) → 접속되면 성공
+- `-u root`: root 계정
+- `-p`: 비밀번호 입력 모드
+- `-P 3308`: 설치할 때 지정한 포트 번호 (`3306`이 아니라면 꼭 맞춰야 함! 현재 `3308`)
+3. 설치 시 입력한 root 비밀번호 입력(현재 기준 : 123456) → 접속 성공하면 `MariaDB [(none)]>` 프롬프트가 뜹니다.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
