@@ -47,8 +47,6 @@ docker run -d `
   mysql:8.0.4
 ```
 
----
-
 ### 🦦MariaDB
 ```
 docker volume create mariadb_edu
@@ -66,8 +64,18 @@ docker run -d `
 > `local`에서 `3308`포트를 쓰고있기 때문에 분리를 위해 `3309`포트로 매핑
 
 
+### 🎗️SQL server
+```sql
+docker run -d `
+  --name dockerSV `
+  -e "ACCEPT_EULA=Y" `
+  -e "SA_PASSWORD=Zxcv159*" `
+  -p 1435:1433 `
+  mcr.microsoft.com/mssql/server:2022-latest
 
+```
 
+---
 
 
 <a href="#top" style="display:block; text-align:right; text-decoration:none; font-size:14px;">⬆️ 맨 위로</a>
