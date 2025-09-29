@@ -4,6 +4,14 @@
 
 ---
 
+## 📜현재 도커 리스트
+
+![alt text](../images/dockerls.png)
+
+>2025-09-26
+
+---
+
 ### 🐘PostgreSQL
 ```
 docker run -d `
@@ -39,14 +47,35 @@ docker run -d `
   mysql:8.0.4
 ```
 
+### 🦦MariaDB
+```
+docker volume create mariadb_edu
+
+docker run -d `
+  --name mariadb-edu `
+  -p 3309:3306 `
+  -e MARIADB_ROOT_PASSWORD=yourRootPass `
+  -e MARIADB_DATABASE=devdb `
+  -e MARIADB_USER=dev `
+  -e MARIADB_PASSWORD=devpass `
+  -v mariadb_edu:/var/lib/mysql `
+  mariadb:11.4
+```
+> `local`에서 `3308`포트를 쓰고있기 때문에 분리를 위해 `3309`포트로 매핑
+
+
+### 🎗️SQL server
+```sql
+docker run -d `
+  --name dockerSV `
+  -e "ACCEPT_EULA=Y" `
+  -e "SA_PASSWORD=Zxcv159*" `
+  -p 1435:1433 `
+  mcr.microsoft.com/mssql/server:2022-latest
+
+```
+
 ---
-
-
-
-
-
-
-
 
 
 <a href="#top" style="display:block; text-align:right; text-decoration:none; font-size:14px;">⬆️ 맨 위로</a>
