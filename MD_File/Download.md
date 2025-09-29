@@ -17,7 +17,7 @@
 **이후 위 화면이 나오면 개인 PC기준 `아래[For me(JuHn)]` 추천**  
 >위는 PC 안에 있는 모든 계정(사용자)에서 DBeaver를 사용할 수 있도록 설치(관리자 권한 필요할 수 있음)
 
-![alt text](/images/dbeaverinstall_2.png)  
+![dbeaver](/images/dbeaverinstall_2.png)  
 
 
 **넘어가면 위 화면이 나오는데 그대로 다음**  
@@ -30,10 +30,10 @@
 - Associate SQLite database files: .sqlite 파일을 더블클릭하면 DBeaver에서 열리도록 연결
 ```
 
-![alt text](/images/dbeaverinstall_3.png)  
+![dbeaver](/images/dbeaverinstall_3.png)  
 **설치 경로 설정 화면`현재 집에서 DB폴더로 DB관련된 소프트웨어 모아서 관리하기 위해 위처럼 경로설정`**  
 
-![alt text](/images/dbeaverinstall_4.png)
+![dbeaver](/images/dbeaverinstall_4.png)
 
 시작메뉴에 바로가기 만들것인지 선택하는 화면(깔끔하게 하기위해 `DBeaver Community > DBeaver`로 변경)
 
@@ -44,9 +44,39 @@
 ## 🐳Docker
 
 **Link : https://www.docker.com/products/docker-desktop**
-- Windows 10 Pro 이상 → Hyper-V / Home → WSL2 필요  
-- 설치 후 재부팅 → 작업표시줄에 🐳 아이콘 확인  
+> Windows 10 Pro 이상 → Hyper-V / Home → WSL2 필요  
+> 설치 후 재부팅 → 작업표시줄에 🐳 아이콘 확인  
 
+![Docker](/images/DockerInstall.png)  
+**위 화면에서 `Download for Windows - AMD64`로 선택후 다운로드**  
+>"AMD64"는 AMD CPU만 지원하는 게 아니고,Intel CPU(64bit)도 포함하는 일반적인 x64 아키텍처를 의미하기 때문에 대부분 저 옵션으로 선택하면 됨.
+
+![Docker](/images/DockerInstall_2.png)
+
+**위 화면에서는 기본값으로 두고 바로 OK 클릭**  
+```java
+* 체크박스 설명
+Use WSL 2 instead of Hyper-V (recommended)
+- 기본적으로 Docker Desktop은 WSL2를 권장합니다.
+- WSL2는 가볍고 빠르며 Windows Home에서도 사용 가능.
+- ✅ 체크 그대로 두세요 (추천).
+Allow Windows Containers to be used with this installation
+- Windows용 네이티브 컨테이너 기능을 켜는 옵션입니다.
+- 주로 리눅스 기반 컨테이너만 쓰게 될 거라서 굳이 필요 없음.
+- ❌ 보통 체크 안 합니다.
+Add shortcut to desktop
+- 바탕화면에 바로가기 아이콘 만들기.
+- ✅ 체크해두면 편합니다.
+```
+![Docker](/images/DockerInstall_3.png)
+```java
+Close and restart 버튼 클릭
+- 윈도우를 재부팅해야 Docker Desktop이 정상적으로 동작
+재부팅 후
+- 바탕화면 아이콘이나 시작 메뉴에서 Docker Desktop 실행
+- 처음 실행 시 WSL2 관련 업데이트나 Docker Hub 로그인 화면이 뜰 수 있음
+- 계정이 없으면 Docker Hub에서 무료 가입 후 로그인
+```
 
 ## 설치 확인 및 실행
 
