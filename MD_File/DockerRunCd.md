@@ -65,7 +65,7 @@ docker run -d `
 
 
 ### 🎗️SQL server
-```sql
+```
 docker run -d `
   --name dockerSV `
   -e "ACCEPT_EULA=Y" `
