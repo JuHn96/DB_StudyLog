@@ -77,6 +77,44 @@ Close and restart 버튼 클릭
 - 처음 실행 시 WSL2 관련 업데이트나 Docker Hub 로그인 화면이 뜰 수 있음
 - 계정이 없으면 Docker Hub에서 무료 가입 후 로그인
 ```
+![Docker](/images/DockerInstall_4.png)
+**위 화면은 사용권 동의(Subscription Service Agreement) 창**  
+- 개인이 공부/개발 용도로 쓰는 경우에는 무료(Community Edition) 입니다.
+- 기업(직원 250명 이상 또는 매출 1천만 달러 이상)만 유료 요금제(Pro/Team/Business) 필요해요.
+👉 따라서 그냥 `Accept` 클릭하면 됨  
+
+![Docker](/images/Dockerlogin.png)
+`Accept`클릭 후 화면
+![Docker](/images/Dockerlogin_2.png)
+**로그인 후 오류화면**
+>WSL(Windows Subsystem for Linux) 버전이 오래돼서 Docker Desktop이 실행이 안 된다는 메시지
+
+**해결방법**
+1. **PowerShell을 관리자 권한으로 실행**
+2. **아래 명령어 입력:**
+```sql
+wsl --update
+```
+>최신 WSL 커널로 업데이트합니다.
+3. **업데이트가 끝나면 재부팅(아래 명령어 입력):**
+```sql
+wsl --shutdown
+```
+4. **다시 Docker Desktop 실행 → 이제 정상적으로 올라와야 함**
+
+**참고**
+만약 wsl 명령어 자체가 안 된다면 `WSL` 설치가 안 된 상태일 수 있음 그럴 때:
+```sql
+wsl --install
+```
+을 실행하면 자동으로 `WSL2 + Ubuntu` 설치.`(Windows 10 최신 업데이트 필요)`
+
+![Docker](/images/DockerInstall_5.png)
+**정상실행화면**
+- 이제는 WSL(리눅스 하위 시스템) 이 제대로 업데이트되어서 `Docker Desktop`이 실행된 상태  
+- 왼쪽 아래 `Engine running`(고래 아이콘 옆에 초록불) 표시 → 도커 엔진이 정상 작동 중이라는 뜻
+
+
 
 ## 설치 확인 및 실행
 
@@ -91,7 +129,7 @@ docker run hello-world
 ```
 "Hello from Docker!" 나오면 정상 설치 완료
 
-**MySQL 실행 예시**
+**MySQL 실행 예시(설치했을 경우)**
 ```sql
 docker run -d --name mysql8-container `
   -e MYSQL_ROOT_PASSWORD=1234 `
@@ -128,7 +166,7 @@ docker exec -it mysql8-container mysql -u root -p
 
 ## 설치창 설명 및 추천 체크 항목
 
-![alt text](../images/mariaDBInstall_2.png)
+![MariaDB](../images/mariaDBInstall_2.png)
 
 **추천 설정**
 - root 비밀번호: 원하는 비밀번호 입력 후 확인
@@ -157,7 +195,7 @@ docker exec -it mysql8-container mysql -u root -p
 -특별히 다른 드라이브에 설치하고 싶지 않으면 건드릴 필요 없습니다.
 
 
-![alt text](../images/mariaDBInstall_3.png)
+![MariaDB](../images/mariaDBInstall_3.png)
 **추천 설정**
 - `Install as service`: 체크 ⭕ (MariaDB 자동 실행)
 - `Enable networking`: 체크 ⭕, 포트 `3306` 유지 (현재 `3308`)
