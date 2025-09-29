@@ -12,18 +12,18 @@
 - 웹 서비스, ERP, CMS, 게임 서버 등 전 세계에서 가장 많이 사용되는 DBMS 중 하나
 ```
 ## ⚙️ MySQL 주요 특징
--오픈소스 & 무료 (Community Edition) - 현재 `Oracle`에서 관리
--크로스 플랫폼 (`Windows`, `Linux`, `Mac` 모두 지원)
--속도와 안정성이 높음
--대규모 서비스(예: Facebook, Twitter 초기)에도 사용됨
--다양한 클라이언트 툴 지원: `DBeaver`, `Workbench`, `phpMyAdmin` 등 (현재 `DBeaver`로 수업중)
+-오픈소스 & 무료 (Community Edition) - 현재 `Oracle`에서 관리  
+-크로스 플랫폼 (`Windows`, `Linux`, `Mac` 모두 지원)  
+-속도와 안정성이 높음  
+-대규모 서비스(예: Facebook, Twitter 초기)에도 사용됨  
+-다양한 클라이언트 툴 지원: `DBeaver`, `Workbench`, `phpMyAdmin` 등 (현재 `DBeaver`로 수업중)  
 
 ## 📦 핵심 개념
-- `Database (DB)` : 데이터의 모음
-- `Table` : DB 안의 실제 데이터 저장 구조 (행=Row, 열=Column)
-- `Primary Key (PK)` : 테이블의 고유 식별자
-- `Foreign Key (FK)` : 다른 테이블과의 연결 키
-- `SQL 문법` : DB 조작을 위한 언어
+- `Database (DB)` : 데이터의 모음  
+- `Table` : DB 안의 실제 데이터 저장 구조 (행=Row, 열=Column)  
+- `Primary Key (PK)` : 테이블의 고유 식별자  
+- `Foreign Key (FK)` : 다른 테이블과의 연결 키  
+- `SQL 문법` : DB 조작을 위한 언어  
 
 ---
 
@@ -90,15 +90,15 @@ DELETE FROM users WHERE user_id = 1;
 ---
 
 **📝 요약**
-1. **MySQL은 데이터를 테이블 형태로 관리하는 `DBMS`:** 오픈소스 `RDBMS`, `SQL` 사용
-2. **핵심 구조:** `DB → Table → Row/Column`
-3. **핵심 키워드:** `CREATE`, `SELECT`, `INSERT`, `UPDATE`, `DELETE`
-4. **실무에서 자주 쓰는 것:**
-- `SELECT + WHERE + ORDER BY + LIMIT`
-- `INSERT` **/** `UPDATE` **/** `DELETE`
-- `JOIN`, `GROUP BY`, `HAVING`
-5. **집계 함수:** `COUNT`, `SUM`, `AVG`, `MAX`, `MIN`
-6. SQL을 사용해 데이터를 `CRUD`(`Create, Read, Update, Delete`)
+1. **MySQL은 데이터를 테이블 형태로 관리하는 `DBMS`:** 오픈소스 `RDBMS`, `SQL` 사용  
+2. **핵심 구조:** `DB → Table → Row/Column`  
+3. **핵심 키워드:** `CREATE`, `SELECT`, `INSERT`, `UPDATE`, `DELETE`  
+4. **실무에서 자주 쓰는 것:**  
+- `SELECT + WHERE + ORDER BY + LIMIT`  
+- `INSERT` **/** `UPDATE` **/** `DELETE`  
+- `JOIN`, `GROUP BY`, `HAVING`  
+5. **집계 함수:** `COUNT`, `SUM`, `AVG`, `MAX`, `MIN`  
+6. SQL을 사용해 데이터를 `CRUD`(`Create, Read, Update, Delete`)  
 7. **`JOIN`**과 `집계 함수`는 실무에서 **매우 중요**
 
 **join 사용 예제**
