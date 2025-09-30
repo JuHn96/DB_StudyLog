@@ -68,6 +68,13 @@
 
 ---
 
+### 강의실에서 쓰던 버전참고 캡쳐
+
+![alt text](image-1.png)
+>출처 : 환자
+
+---
+
 <a href="#top" style="display:block; text-align:right; text-decoration:none; font-size:14px;">
 ⬆️ 맨 위로
 </a>

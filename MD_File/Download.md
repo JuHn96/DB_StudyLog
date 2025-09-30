@@ -144,6 +144,66 @@ docker exec -it mysql8-container mysql -u root -p
 ```
 
 ---
+
+## 🐬MySQL
+
+
+
+## 로컬 설치 링크(현재 집에선 Docker로만 설치해서 추후 업데이트 예정)
+**Link : https://dev.mysql.com/downloads/installer/**
+```
+MySQL Installer (윈도우 GUI 방식 - 로컬)
+
+가장 초보자 친화적인 방법입니다.
+
+공식 다운로드
+ 접속
+
+MySQL Installer for Windows (Community Edition) → 32bit/64bit 모두 지원
+
+mysql-installer-community-<버전>.msi 파일 받기
+
+설치 실행 후 옵션 선택
+
+Developer Default → 서버 + Workbench + 샘플 DB 같이 설치
+
+Server only → 서버만
+
+환경설정 진행
+
+포트: 기본 3306 (중복 시 3307, 3308 등으로 변경 가능)
+
+인증 방식: Use Strong Password Encryption (MySQL 8.0 Recommended)
+
+root 계정 암호 설정
+
+필요 시 사용자 계정 추가
+
+설치 완료 후 확인
+
+Windows Service 등록됨 (자동 실행)
+
+mysql -u root -p 로 접속 테스트
+```
+
+---
+
+## 🐘PostgreSQL
+
+## 설치 링크
+**Link : https://www.postgresql.org/download/**
+
+
+![PostgreSQL](/images/PostgreSQL_install.png)
+>위 화면에서 환경에 맞는것 선택(현재 `Windows`사용중이라 `Windows`기준)
+
+
+
+
+
+
+---
+
 ## 🦦MariaDB
 
 ## 설치 링크
