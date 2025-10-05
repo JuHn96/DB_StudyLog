@@ -113,6 +113,7 @@
 
 ---
 
+## DBeaver에서 연결
 
 ![SQL Developer](/images/SQLDeveloper/SQLDeveloper_18.png)
 ![SQL Developer](/images/SQLDeveloper/SQLDeveloper_19.png)
