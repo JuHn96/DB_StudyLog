@@ -8,16 +8,16 @@
 ## 설치 링크
 **Link : https://dbeaver.io/download/**  
 
-![dbeaver](/images/dbeaver.png)  
+![dbeaver](/images/dbeaver/dbeaver.png)  
 >링크에 들어가서 위 사진처럼 `installer`로 되어있는것 클릭해서 설치
 
 
 
-![dbeaver](/images/dbeaverinstall.png)  
+![dbeaver](/images/dbeaver/dbeaverinstall.png)  
 **이후 위 화면이 나오면 개인 PC기준 `아래[For me(JuHn)]` 추천**  
 >위는 PC 안에 있는 모든 계정(사용자)에서 DBeaver를 사용할 수 있도록 설치(관리자 권한 필요할 수 있음)
 
-![dbeaver](/images/dbeaverinstall_2.png)  
+![dbeaver](/images/dbeaver/dbeaverinstall_2.png)  
 
 
 **넘어가면 위 화면이 나오는데 그대로 다음**  
@@ -30,10 +30,10 @@
 - Associate SQLite database files: .sqlite 파일을 더블클릭하면 DBeaver에서 열리도록 연결
 ```
 
-![dbeaver](/images/dbeaverinstall_3.png)  
+![dbeaver](/images/dbeaver/dbeaverinstall_3.png)  
 **설치 경로 설정 화면`현재 집에서 DB폴더로 DB관련된 소프트웨어 모아서 관리하기 위해 위처럼 경로설정`**  
 
-![dbeaver](/images/dbeaverinstall_4.png)
+![dbeaver](/images/dbeaver/dbeaverinstall_4.png)
 
 시작메뉴에 바로가기 만들것인지 선택하는 화면(깔끔하게 하기위해 `DBeaver Community > DBeaver`로 변경)
 
@@ -47,11 +47,11 @@
 > Windows 10 Pro 이상 → Hyper-V / Home → WSL2 필요  
 > 설치 후 재부팅 → 작업표시줄에 🐳 아이콘 확인  
 
-![Docker](/images/DockerInstall.png)  
+![Docker](/images/Docker/DockerInstall.png)  
 **위 화면에서 `Download for Windows - AMD64`로 선택후 다운로드**  
 >"AMD64"는 AMD CPU만 지원하는 게 아니고,Intel CPU(64bit)도 포함하는 일반적인 x64 아키텍처를 의미하기 때문에 대부분 저 옵션으로 선택하면 됨.
 
-![Docker](/images/DockerInstall_2.png)
+![Docker](/images/Docker/DockerInstall_2.png)
 
 **위 화면에서는 기본값으로 두고 바로 OK 클릭**  
 ```java
@@ -68,7 +68,7 @@ Add shortcut to desktop
 - 바탕화면에 바로가기 아이콘 만들기.
 - ✅ 체크해두면 편합니다.
 ```
-![Docker](/images/DockerInstall_3.png)
+![Docker](/images/Docker/DockerInstall_3.png)
 ```java
 Close and restart 버튼 클릭
 - 윈도우를 재부팅해야 Docker Desktop이 정상적으로 동작
@@ -77,15 +77,15 @@ Close and restart 버튼 클릭
 - 처음 실행 시 WSL2 관련 업데이트나 Docker Hub 로그인 화면이 뜰 수 있음
 - 계정이 없으면 Docker Hub에서 무료 가입 후 로그인
 ```
-![Docker](/images/DockerInstall_4.png)
+![Docker](/images/Docker/DockerInstall_4.png)
 **위 화면은 사용권 동의(Subscription Service Agreement) 창**  
 - 개인이 공부/개발 용도로 쓰는 경우에는 무료(Community Edition) 입니다.
 - 기업(직원 250명 이상 또는 매출 1천만 달러 이상)만 유료 요금제(Pro/Team/Business) 필요해요.
 👉 따라서 그냥 `Accept` 클릭하면 됨  
 
-![Docker](/images/Dockerlogin.png)
+![Docker](/images/Docker/Dockerlogin.png)
 `Accept`클릭 후 화면
-![Docker](/images/Dockerlogin_2.png)
+![Docker](/images/Docker/Dockerlogin_2.png)
 **로그인 후 오류화면**
 >WSL(Windows Subsystem for Linux) 버전이 오래돼서 Docker Desktop이 실행이 안 된다는 메시지
 
@@ -109,7 +109,7 @@ wsl --install
 ```
 을 실행하면 자동으로 `WSL2 + Ubuntu` 설치.`(Windows 10 최신 업데이트 필요)`
 
-![Docker](/images/DockerInstall_5.png)
+![Docker](/images/Docker/DockerInstall_5.png)
 **정상실행화면**
 - 이제는 WSL(리눅스 하위 시스템) 이 제대로 업데이트되어서 `Docker Desktop`이 실행된 상태  
 - 왼쪽 아래 `Engine running`(고래 아이콘 옆에 초록불) 표시 → 도커 엔진이 정상 작동 중이라는 뜻
@@ -194,7 +194,7 @@ mysql -u root -p 로 접속 테스트
 **Link : https://www.postgresql.org/download/**
 
 
-![PostgreSQL](/images/PostgreSQL_install.png)
+![PostgreSQL](/images/PostgreSQL/PostgreSQL_install.png)
 >위 화면에서 환경에 맞는것 선택(현재 `Windows`사용중이라 `Windows`기준)
 
 
@@ -210,7 +210,7 @@ mysql -u root -p 로 접속 테스트
 **Link : https://mariadb.org/download/**
 
 ### 다운로드 설정 예시(현재 사용중인 패키지 설정)
-![alt text](../images/mariaDBInstall_1.png)
+![alt text](../images/mariaDB/mariaDBInstall_1.png)
 
 > 수업에 사용된 버전 `11.4.8`
 
@@ -226,7 +226,7 @@ mysql -u root -p 로 접속 테스트
 
 ## 설치창 설명 및 추천 체크 항목
 
-![MariaDB](../images/mariaDBInstall_2.png)
+![MariaDB](../images/mariaDB/mariaDBInstall_2.png)
 
 **추천 설정**
 - root 비밀번호: 원하는 비밀번호 입력 후 확인
@@ -255,7 +255,7 @@ mysql -u root -p 로 접속 테스트
 -특별히 다른 드라이브에 설치하고 싶지 않으면 건드릴 필요 없습니다.
 
 
-![MariaDB](../images/mariaDBInstall_3.png)
+![MariaDB](../images/mariaDB/mariaDBInstall_3.png)
 **추천 설정**
 - `Install as service`: 체크 ⭕ (MariaDB 자동 실행)
 - `Enable networking`: 체크 ⭕, 포트 `3306` 유지 (현재 `3308`)

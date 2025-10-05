@@ -70,7 +70,7 @@
 
 ### 강의실에서 쓰던 버전참고 캡쳐
 
-![alt text](image-1.png)
+![version](version.png)
 >출처 : 환자
 
 ---

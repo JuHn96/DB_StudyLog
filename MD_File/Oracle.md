@@ -6,45 +6,45 @@
 ## 설치링크  
 **Link : https://www.oracle.com/database/technologies/appdev/xe.html**
 
-![Oracle](/images/Oracleinstall_2.png)
+![Oracle](/images/Oracle/Oracleinstall_2.png)
 >링크 접속하면 위 화면
 
-![Oracle](/images/Oracleinstall.png)
+![Oracle](/images/Oracle/Oracleinstall.png)
 >위 버튼 클릭
 
-![Oracle](/images/Oracleinstall_3.png)
+![Oracle](/images/Oracle/Oracleinstall_3.png)
 >위 화면으로 이동
 
-![Oracle](/images/Oracleinstall_4.png)
+![Oracle](/images/Oracle/Oracleinstall_4.png)
 >위 버튼 클릭
 
-![Oracle](/images/Oracleinstall_5.png)
+![Oracle](/images/Oracle/Oracleinstall_5.png)
 >설치후 압축풀면 위 화면에서 setup.exe 실행
 
-![Oracle](/images/Oracleinstall_6.png)
+![Oracle](/images/Oracle/Oracleinstall_6.png)
 > 다음
 
-![Oracle](/images/Oracleinstall_7.png)
+![Oracle](/images/Oracle/Oracleinstall_7.png)
 > 동의함
 
-![Oracle](/images/Oracleinstall_8.png)
+![Oracle](/images/Oracle/Oracleinstall_8.png)
 > 경로 설정( 사님은 c 에 oracle21xe 폴더 만들어서 설치 )이후 다음
 
-![Oracle](/images/Oracleinstall_9.png)
+![Oracle](/images/Oracle/Oracleinstall_9.png)
 > 비밀번호 123456으로 설정하셔서 그대로 함.(본인선택) 이후 다음
 
-![Oracle](/images/Oracleinstall_10.png)
+![Oracle](/images/Oracle/Oracleinstall_10.png)
 > 설치 안내문 설치
 
-![alt text](image.png)
+![alt text](/images/Oracle/Oracleinstall_11.png)
 > 설치 성공
 
 ---
 ## 오류
-![Oracle](image-6.png)
+![Oracle](/images/Oracle/Oracle_1.png)
 >위 오류떴을시
 
-![Oracle](image-18.png)
+![Oracle](/images/Oracle/Oracle_2.png)
 >서비스 창 실행 서비스에서 OracleServiceXE, OracleServiceORCL 같은 게 있으면 중지 & 삭제
 
 >이후 기존 설치폴더 삭제
@@ -58,7 +58,7 @@
 ---
 ## 정보
 
-![Oracle](/images/Oracle.png)
+![Oracle](/images/Oracle/Oracle.png)
 이 경로 안에 실제 데이터
 
 
@@ -69,22 +69,22 @@
 
 ### 설치하는동안 해본다고 설치함(ㅇㅅㅁ이 건의해서) 결론 중도포기 안함 도커관련
 
-![Oracle](image-7.png)
+![Oracle](/images/Oracle/Oracle_3.png)
 
-![Oracle](image-8.png)
+![Oracle](/images/Oracle/Oracle_4.png)
 설치하면 아래 화면으로 이동
-![Oracle](image-9.png)
+![Oracle](/images/Oracle/Oracle_5.png)
 위에 확장 설치하고 Docker 실행
-![Oracle](image-10.png)
+![Oracle](/images/Oracle/Oracle_6.png)
 이후 검색
-![Oracle](image-11.png)
+![Oracle](/images/Oracle/Oracle_7.png)
 상단 페이지로 이동
-![Oracle](image-13.png)
-![Oracle](image-14.png)
+![Oracle](/images/Oracle/Oracle_8.png)
+![Oracle](/images/Oracle/Oracle_11.png)
 copy해서 복사
-![Oracle](image-15.png)
+![Oracle](/images/Oracle/Oracle_9.png)
 위처럼 PowerShell에서 복사한것 붙여넣고 실행
-![Oracle](image-17.png)
+![Oracle](/images/Oracle/Oracle_10.png)
 그럼 위 처럼 설치함
 
 1단계: Docker Desktop 준비

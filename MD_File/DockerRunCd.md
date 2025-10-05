@@ -6,7 +6,7 @@
 
 ## 📜현재 도커 리스트
 
-![alt text](../images/dockerls.png)
+![alt text](../images/Docker/dockerls.png)
 
 >2025-09-26
 
