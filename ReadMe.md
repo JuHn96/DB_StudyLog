@@ -24,14 +24,16 @@
 ---
 ## List
 
+### 🐳Docker - [Go](/MD_File/Docker.md) 
+>[📜DockerRunCodeList](/MD_File/DockerRunCd.md)
 ### 🐿️DBeaver - [Go](/MD_File/DBeaver.md)
 ### 🐬MySQL - [Go](/MD_File/MySQL.md)
 ### 🍃MongoDB - 
-### 🐳Docker - [Go](/MD_File/Docker.md) 
->[📜DockerRunCodeList](/MD_File/DockerRunCd.md)
 ### 🐘PostgreSQL - 
 ### 🦦MariaDB - 
 ### 🎗️SQL server -
+### 🏺Oracle - 
+### 🧩SQL Developer - 
 
 ---
 
@@ -43,6 +45,8 @@
 >25.09.25 - dockerRunCode 추가, 각 아이콘 보완 및 수정
 
 >25.09.26 - MariaDB.md / download.md에 mariadb 설치방법 추가
+
+>25.10.02 - Oracle / SQL Developer 추가 (아직 정리 진행중)
 
 
 

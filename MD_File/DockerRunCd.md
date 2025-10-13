@@ -6,6 +6,7 @@
 
 ## 📜현재 도커 리스트
 
+### 학원에서 쓰는 도커
 ![alt text](../images/Docker/dockerls.png)
 
 >2025-09-26
@@ -37,15 +38,16 @@ docker run -d `
 ### 🐬MySQL
 ```
 docker run -d `
-  --name mysql8-container `
-  -e MYSQL_ROOT_PASSWORD=1234 `
+  --name portal-mysql `
+  -e MYSQL_ROOT_PASSWORD=9167 `
   -e MYSQL_DATABASE=testdb `
-  -e MYSQL_USER=testuser `
-  -e MYSQL_PASSWORD=testpw `
+  -e MYSQL_USER=portal `
+  -e MYSQL_PASSWORD=9167 `
   -p 3307:3306 `
   -v mysql_data:/var/lib/mysql `
   mysql:8.0.4
 ```
+
 
 ### 🦦MariaDB
 ```
